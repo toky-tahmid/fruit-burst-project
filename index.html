@@ -10,18 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d'
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         .lato {
             font-family: 'Lato', sans-serif;
@@ -38,7 +26,7 @@
             <div class="navbar bg-[#F85559] mt-4 rounded-full">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -54,6 +42,14 @@
                         </ul>
                     </div>
                 </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal text-white pr-56">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>                  
+                  </div>
                 <!-- middle section -->
                 <div class="navbar-center mr-72">
                     <div class="h-1 w-8 mb-9 mr-4">
@@ -61,10 +57,8 @@
                     </div>
                     <h2 class="font-extrabold text-white text-2xl">Fruit Burst</h2>
                 </div>
-
-
                 <!-- Right Section -->
-                <div class="flex space-x-4 ">
+                <div class="flex sm:hidden space-x-4 ">
                     <input type="text" placeholder="Search here"
                         class="px-9 py-2 bg-white text-black rounded-full focus:outline-none focus:ring focus:border-blue-300">
 
