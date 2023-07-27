@@ -16,14 +16,15 @@
         }
         
     </style>
-    <script src="https://kit.fontawesome.com/ad0d6f0322.js" crossorigin="anonymous"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/ad0d6f0322.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
 </head>
-
 <body class="lato">
     <header class="md:container md:mx-auto">
         <!-- nav bar starts -->
         <nav>
-            <div class="navbar bg-[#F85559] mt-4 rounded-full">
+            <div class="navbar  bg-[#F85559] mt-4 rounded-full">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
@@ -42,32 +43,35 @@
                         </ul>
                     </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal text-white pr-56">
-                      <li><a>Home</a></li>
-                      <li><a>About Us</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>All Fruits</a></li>
-                    </ul>                  
-                  </div>
+                <div class="navbar-center hidden md:block lg:block">
+                    <ul class="menu menu-horizontal text-white pr-80">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
                 <!-- middle section -->
-                <div class="navbar-center mr-72">
+                <div class="navbar-center mr-52">
                     <div class="h-1 w-8 mb-9 mr-4">
                         <img src="images/logo.png" alt="">
                     </div>
                     <h2 class="font-extrabold text-white text-2xl">Fruit Burst</h2>
                 </div>
                 <!-- Right Section -->
-                <div class="flex sm:hidden space-x-4 ">
+                <div class="flex relative space-x-4 ">
                     <input type="text" placeholder="Search here"
+                    
                         class="px-9 py-2 bg-white text-black rounded-full focus:outline-none focus:ring focus:border-blue-300">
+                        <div class="absolute "><i class="fa-solid fa-magnifying-glass"></i></div>
+                        
 
                 </div>
             </div>
         </nav>
         <!-- nav bar ends -->
         <!-- banner section -->
-        <div class="carousel relative w-auto mt-4">
+        <div class="carousel  lg:relative w-auto mt-4">
             <div id="slide1" class="carousel-item relative w-full">
                 <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
@@ -102,7 +106,7 @@
                     <a href="#slide3" class="btn btn-circle">❯</a>
                 </div>
             </div>
-            <div id="slide3" class="carousel-item relative w-full">
+            <div id="slide3" class="carousel-item  lg:h-[550px] relative w-full">
                 <div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
@@ -136,9 +140,10 @@
                     <a href="#slide1" class="btn btn-circle">❯</a>
                 </div>
             </div>
-            <!-- fruits -->
+
         </div>
-        <div class="bg-white absolute ml-64 pl-28 pr-28 pb-0 -mt-16 gap-14 flex">
+        <!-- fruits -->
+        <div class="bg-white absolute ml-80 pl-10  pb-0 -mt-16 gap-14 flex">
             <img class="w-20 items-center h-28" src="images/fruit1.png" alt="">
             <div class="mt-24 pt-4 -ml-36 font-bold">
                 <p class="ml-4">Grape</p>
@@ -160,7 +165,7 @@
                 <p class="ml-4">Pomegranate</p>
             </div>
         </div>
-      <!-- banner end -->
+        <!-- banner end -->
     </header>
     <main class="md:container md:mx-auto mt-52">
         <section class="flex justify-between">
@@ -195,7 +200,7 @@
                 <div class="flex flex-col">
                     <span class="countdown font-mono text-5xl">
                         <span style="--value:33;"></span>
-                        
+
                     </span>
                     sec
                 </div>
@@ -210,7 +215,7 @@
                 <div class="card bg-base-100 p-9 border border-gray-400">
                     <figure><img class="w-20" src="/images/fruit6.png" alt="" /></figure>
                     <div class="card-body">
-                        <p class="text-center">12.90$ - 18.85$</p>
+                        <p class="text-center mt-4">12.90$-18.85$</p>
                         <div class="text-center space-y-4 mt-4">
                             <h4 class="text-sm font-semibold text-info">Apples</h4>
 
@@ -224,7 +229,7 @@
                         </div>
                         <div>
 
-                            <button class="btn ml-8" onclick="my_modal_1.showModal()">Details</button>
+                            <button class="btn ml-7" onclick="my_modal_1.showModal()">Details</button>
                             <dialog id="my_modal_1" class="modal">
                                 <form method="dialog" class="modal-box">
                                     <figure><img class="w-24" src="/images/fruit6.png" alt="" /></figure>
@@ -259,7 +264,7 @@
                 <div class="card bg-base-100 p-9 border border-gray-400">
                     <figure><img class="w-24" src="/images/fruit7.png" alt="" /></figure>
                     <div class="card-body">
-                        <p class="text-center mt-5">12.90$ - 18.85$</p>
+                        <p class="text-center mt-5">12.90$-18.85$</p>
                         <div class="text-center space-y-4 mt-4">
                             <h4 class="text-sm font-semibold text-info">Orange</h4>
 
@@ -273,7 +278,7 @@
                         </div>
                         <div>
 
-                            <button class="btn ml-8" onclick="my_modal_2.showModal()">Details</button>
+                            <button class="btn ml-7" onclick="my_modal_2.showModal()">Details</button>
                             <dialog id="my_modal_2" class="modal">
                                 <form method="dialog" class="modal-box">
                                     <figure><img class="w-24" src="/images/fruit7.png" alt="" /></figure>
@@ -308,7 +313,7 @@
                 <div class="card bg-base-100 p-9 border border-gray-400">
                     <figure><img class="w-24" src="/images/fruit8.png" alt="" /></figure>
                     <div class="card-body">
-                        <p class="text-center mt-5">12.90$ - 18.85$</p>
+                        <p class="text-center mt-5">12.90$-18.85$</p>
                         <div class="text-center space-y-4 mt-4">
                             <h4 class="text-sm font-semibold text-info">Red Dragon</h4>
 
@@ -322,7 +327,7 @@
                         </div>
                         <div>
 
-                            <button class="btn ml-8" onclick="my_modal_3.showModal()">Details</button>
+                            <button class="btn ml-7" onclick="my_modal_3.showModal()">Details</button>
                             <dialog id="my_modal_3" class="modal">
                                 <form method="dialog" class="modal-box">
                                     <figure><img class="w-24" src="/images/fruit8.png" alt="" /></figure>
@@ -357,7 +362,7 @@
                 <div class="card bg-base-100 p-9 border border-gray-400">
                     <figure><img class="w-24" src="/images/fruit9.png" alt="" /></figure>
                     <div class="card-body">
-                        <p class="text-center mt-5">12.90$ - 18.85$</p>
+                        <p class="text-center mt-5">12.90$-18.85$</p>
                         <div class="text-center space-y-4 mt-4">
                             <h4 class="text-sm font-semibold text-info">Banana</h4>
 
@@ -371,7 +376,7 @@
                         </div>
                         <div>
 
-                            <button class="btn ml-8" onclick="my_modal_4.showModal()">Details</button>
+                            <button class="btn ml-7" onclick="my_modal_4.showModal()">Details</button>
                             <dialog id="my_modal_4" class="modal">
                                 <form method="dialog" class="modal-box">
                                     <figure><img class="w-24" src="/images/fruit9.png" alt="" /></figure>
@@ -478,7 +483,8 @@
                         </div>
                         <div>
                             <h2 class="text-2xl font-extrabold border-b-4 mb-5">Dedicated Team</h2>
-                            <p class="font-medium text-base mb-4">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                            <p class="font-medium text-base mb-4">Professional employees are there for you to pick <br>
+                                the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <div class="flex gap-6 items-center">
@@ -487,7 +493,8 @@
                         </div>
                         <div>
                             <h2 class="text-2xl font-extrabold border-b-4 mb-5">Fresh is Best</h2>
-                            <p class="font-medium text-base mb-4">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                            <p class="font-medium text-base mb-4">Professional employees are there for you to pick <br>
+                                the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <div class="flex gap-6 items-center">
@@ -496,78 +503,82 @@
                         </div>
                         <div>
                             <h2 class="text-2xl font-extrabold border-b-4 mb-5">Gift Certificates</h2>
-                            <p class="font-medium text-base mb-4">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                            <p class="font-medium text-base mb-4">Professional employees are there for you to pick <br>
+                                the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                 </div>
-<!-- why choose us picture -->
+                <!-- why choose us picture -->
                 <div class="divider lg:divider-horizontal mt-44">
-                    <img src="images/whychoose1.png" alt="">                   
+                    <img src="images/whychoose1.png" alt="">
                 </div>
 
                 <div class="grid flex-grow h-32 place-items-center">
                     <div class="flex gap-6 items-center">
                         <div>
                             <h2 class="text-2xl text-end font-extrabold border-b-4 mb-5">Integrated Supplier</h2>
-                            <p class="font-medium text-base text-end mb-4">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                            <p class="font-medium text-base text-end mb-4">Professional employees are there for you to
+                                pick <br> the most amazing and fresh fruits.</p>
                         </div>
                         <div>
-                        <img class="w-8" src="images/f.png" alt="">
+                            <img class="w-8" src="images/f.png" alt="">
                         </div>
                     </div>
                     <div class="flex gap-6 items-center">
-                        
+
                         <div>
                             <h2 class="text-2xl text-end font-extrabold border-b-4 mb-5">Sustainable Practice</h2>
-                            <p class="font-medium text-base text-end mb-4">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                            <p class="font-medium text-base text-end mb-4">Professional employees are there for you to
+                                pick <br> the most amazing and fresh fruits.</p>
                         </div>
                         <div>
                             <i class="fa-solid fa-ice-cream"></i>
                         </div>
                     </div>
                     <div class="flex gap-6 items-center">
-                        
+
                         <div>
                             <h2 class="text-2xl text-end font-extrabold border-b-4 mb-5">The Benefits Only</h2>
-                            <p class="font-medium text-base  text-end mb-4">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                            <p class="font-medium text-base  text-end mb-4">Professional employees are there for you to
+                                pick <br> the most amazing and fresh fruits.</p>
                         </div>
                         <div>
                             <i class="fa-regular fa-thumbs-up"></i>
-                        </div>                   
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
         <!-- divider section ends -->
-    </main>
+    </main> 
     <!-- footer stars -->
-     <footer class="footer mt-80 footer-center p-10 bg-[#121212] text-primary-content"> 
-    <div class=" flex">
-        <div class="h-8 w-10">
-            <img src="images/logo.png" alt="">
+    <footer class="footer mt-80 footer-center p-10 bg-[#121212] text-primary-content">
+        <div class=" flex ">
+            <div class="h-8 w-10">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div>
+                <h2 class="font-extrabold text-white mt-5 text-3xl">Fruit Burst</h2>
+            </div>
         </div>
-        <div>
-      <h2 class="font-extrabold text-white mt-5 text-3xl">Fruit Burst</h2>
-    </div>
-    </div> 
-  <div  class="flex gap-8 list-none">
-    <li>Home</li>
-    <li>About Us</li>
-    <li>All Fruits</li>
-    <li>Shop</li>
-    <li>Support</li>
-    <li>My Account</li>
-</div>
-    <div class="grid grid-flow-col gap-4">
-      <img src="images/icons8-apple-logo-49.png" alt="">
-      <img src="images/icons8-facebook-48.png" alt="">
-      <img src="images/icons8-instagram-48.png" alt="">
-      <img src="images/icons8-linkedin-48.png" alt="">
-      <img src="images/icons8-twitter-48.png" alt="">
-      <img src="images/icons8-youtube-48.png" alt="">
-    </div>
-  
-</footer> 
- <!-- footer ends -->
+        <div class="flex gap-8 list-none">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>All Fruits</li>
+            <li>Shop</li>
+            <li>Support</li>
+            <li>My Account</li>
+        </div>
+        <div class="grid grid-flow-col gap-4">
+            <img src="images/icons8-apple-logo-49.png" alt="">
+            <img src="images/icons8-facebook-48.png" alt="">
+            <img src="images/icons8-instagram-48.png" alt="">
+            <img src="images/icons8-linkedin-48.png" alt="">
+            <img src="images/icons8-twitter-48.png" alt="">
+            <img src="images/icons8-youtube-48.png" alt="">
+        </div>
+
+    </footer>
+    <!-- footer ends -->
 </body>
 
 </html>
